@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tanuja Store - Distribution Company</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/9779820759526?text=Hello%20Tanuja%20Store"
+class="whatsapp-float"
+target="_blank">
+
+<img src="https://cdn-icons-png.flaticon.com/512/733/733585.png"
+alt="WhatsApp">
+
+</a>
+ <style>
+
+
+
+
+
+@media(max-width:900px){
+
+.contact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+iframe{
+
+width:100%;
+height:100%;
+border-radius:12px;
+border:none;
+
+}
+/* Smooth Scrolling */
+html{
+    scroll-behavior:smooth;
+}
+
+/* Gallery */
+.gallery{
+    padding:80px 0;
+}
+
+.gallery-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:20px;
+    margin-top:40px;
+}
+
+.gallery-item{
+    overflow:hidden;
+    border-radius:15px;
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.gallery-item.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+.gallery-item img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+    display:block;
+    transition:transform .5s ease;
+}
+
+.gallery-item:hover img{
+    transform:scale(1.1);
+}
+
+/* Product Animation */
+.product-card{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.product-card.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Contact Animation */
+.contact-item{
+    opacity:0;
+    transform:translateY(40px);
+    transition:all .8s ease;
+}
+
+.contact-item.show{
+    opacity:1;
+    transform:translateY(0);
+}
+
+/* Navbar Hover Effect */
+.nav-menu a{
+    position:relative;
+    text-decoration:none;
+}
+
+.nav-menu a::after{
+    content:'';
+    position:absolute;
+    width:0;
+    height:2px;
+    left:0;
+    bottom:-5px;
+    background:#00d4ff;
+    transition:.3s;
+}
+
+.nav-menu a:hover::after{
+    width:100%;
+}
+
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Tanuja Store</h1>
+                <p>Your Trusted Distribution Partner</p>
+            </div>
+            <ul class="nav-menu">
+          <ul class="nav-menu">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#products">Products</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#contact">Contact</a></li>
+</ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>Welcome to Tanuja Store</h1>
+            <p>Premier Distribution Company for Quality Products</p>
+            <div class="hero-buttons">
+                <a href="#contact" class="btn-primary">Contact Us</a>
+                <a href="#products" class="btn-secondary">Explore Products</a>
+            </div>
+        </div>
+    </section>
+<!-- Products Section -->
+<section id="products" class="products">
+<div class="container">
+
+<h2 class="section-title">Our Products</h2>
+<p class="section-subtitle">
+Distributing premium quality products across the region
+</p>
+
+<div class="products-grid">
+
+<!-- Product 1 -->
+<div class="product-card">
+<div class="product-image">
+<img src="frooti_1732249984.jpg" alt="Frooti">
+</div>
+<h3>Frooti</h3>
+</div>
+
+<!-- Product 2 -->
+<div class="product-card">
+<div class="product-image">
+<img src="appy.jpg.jpg" alt="Appy ">
+</div>
+<h3>Appy Fizz</h3>
+</div>
+
+<!-- Product 3 -->
+<div class="product-card">
+<div class="product-image">
+<img src="images.jpg" alt="old monk">
+</div>
+<h3>old monk</h3>
+</div>
+
+<!-- Product 4 -->
+<div class="product-card">
+<div class="product-image">
+<img src="smoodh.jpg" alt="smoodh">
+</div>
+<h3>smoodh</h3>
+</div>
+
+<!-- Product 5 -->
+<div class="product-card">
+<div class="product-image">
+<img src="download (1).jpg" alt="Appy fizz">
+</div>
+<h3>Appy Fizz</h3>
+</div>
+<div class="product-card">
+<div class="product-image">
+<img src="download (2).jpg" alt="the himalayan reserve">
+</div>
+<h3>the himalayan reserve</h3>
+</div>
+<div class="product-card">
+<div class="product-image">
+<img src="download.png" alt="many more">
+</div>
+<h3>many more</h3>
+</div>
+</div>
+</div>
+</section>
+<h2 class="section-title">gallery</h2>
+
+               <div class="gallery-grid">
+
+<div class="gallery-item">
+<img src="download (1).jpg" alt="png">
+</div>
+<div class="gallery-item">
+<img src="gallery2.jpg" alt="">
+</div>
+
+<div class="gallery-item">
+<img src="gallery3.jpg" alt="">
+</div>
+
+<div class="gallery-item">
+<img src="gallery4.jpg" alt="">
+</div>
+
+<div class="gallery-item">
+<img src="gallery5.jpg" alt="">
+</div>
+
+<div class="gallery-item">
+<img src="gallery6.jpg" alt="">
+</div>
+
+</div>  
+
+ 
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Get in touch with us for your distribution needs</p>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div class="contact-details">
+                            <h3>Address</h3>
+                            <p>east west highway, balgram<br>
+                            near petrol pump<br>
+                            City itahari,<br>
+                            State, nepal</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div class="contact-details">
+                            <h3>Contact Number</h3>
+                            <p>+977 9820759526</p>
+                            <p>+977 9852059526</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">✉️</div>
+                        <div class="contact-details">
+                            <h3>Email</h3>
+                            <p>tanujastash24@gmail.com</p>
+                            <p>premguragain@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+             <div class="contact-form">
+    <form id="contactForm" action="https://formspree.io/f/mqedkqew" method="POST">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+            <input type="tel" name="phone" placeholder="Your Phone Number" required>
+        </div>
+        <div class="form-group">
+            <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <div class="form-group">
+            <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Send Message</button>
+    </form>
+    <p id="formResponse" style="display:none; color:green;">Sent successfully!</p>
+</div>
+
+<script>
+document.getElementById("contactForm").addEventListener("submit", async function(e) {
+    e.preventDefault();
+    const form = e.target;
+    const response = await fetch(form.action, {
+        method: form.method,
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' }
+    });
+    if (response.ok) {
+        form.reset();
+        document.getElementById("formResponse").style.display = "block";
+    } else {
+        alert("Oops! Something went wrong.");
+    }
+});
+</script>
+            
+            <iframe
+       src="https://www.google.com/maps?q=26.66976,87.249321&z=17&output=embed">
+
+            </iframe>
+    
+
+
+    <script src="script.js"></script>
+    <script>
+// Scroll Animations
+const observer = new IntersectionObserver((entries)=>{
+    entries.forEach(entry=>{
+        if(entry.isIntersecting){
+            entry.target.classList.add("show");
+        }
+    });
+},{
+    threshold:0.2
+});
+
+document.querySelectorAll(
+'.gallery-item, .product-card, .contact-item'
+).forEach((el)=>{
+    observer.observe(el);
+});
+</script>
+</body>
+</html>
+
